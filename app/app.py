@@ -17,6 +17,7 @@ X_train, X_test, y_train, y_test = split_data(X, y)
 model = RandomForestModel()
 model.train(X_train, y_train)
 
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()

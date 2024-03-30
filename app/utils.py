@@ -12,6 +12,7 @@ def load_data(data_path):
     y = data.iloc[:, 1].map({'M': 1, 'B': 0}).values
     return (X, y)
 
+
 def preprocess_data(X):
     """
     Preprocess the dataset by applying necessary transformations.
@@ -38,16 +39,10 @@ def preprocess_data(X):
     return preprocessed_X
 
 
-def split_data(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42,
-    ):
+def split_data( X , y , test_size = 0.2 , random_state = 42 ):
     """
     Split the dataset into training and testing sets.
     """
 
-    (X_train, X_test, y_train, y_test) = train_test_split(X, y,
-            test_size=test_size, random_state=random_state)
+    (X_train, X_test, y_train, y_test) = train_test_split(X, y,test_size=test_size, random_state=random_state)
     return (X_train, X_test, y_train, y_test)

@@ -32,7 +32,7 @@ The CI/CD pipeline consists of the following stages:
 
 To get started with this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/mlops-pipeline.git`
+1. Clone the repository: `https://github.com/Wajahat1769/MLOps-Pipeline-Streamlining-ML-Model-Deployment.git`
 2. Install the required dependencies (e.g., Python packages, Docker, Jenkins).
 3. Configure the CI/CD workflows and Jenkins job according to the project's documentation.
 4. Develop your machine learning model and application in the `dev` branch.

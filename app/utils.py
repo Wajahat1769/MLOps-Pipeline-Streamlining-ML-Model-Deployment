@@ -5,9 +5,8 @@ from sklearn.preprocessing import StandardScaler
 
 def load_data(data_path):
     data = pd.read_csv(data_path)
-    X = data.iloc[:, 2:].values.astype(np.float32)  # Exclude first column (id) and second column (diagnosis)
-    y = data.iloc[:, 1].map({'M': 1, 'B': 0}).values  # Second column (diagnosis)
-    return X, y
+    X = data.iloc[:, 2:].values.astype(np.float32)  
+    y = data.iloc[:, 1].map({'M': 1, 'B': 0}).values 
 
 def preprocess_data(X):
     """

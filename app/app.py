@@ -3,21 +3,16 @@ from model import RandomForestModel
 from utils import load_data, preprocess_data, split_data
 
 app = Flask(__name__)
-
+path='data/raw/wdbc.csv'
 # Load the dataset
-X, y = load_data('D:/Assignment01-MLOPS/MLOps-Pipeline-Streamlining-ML-Model-Deployment/data/raw/wdbc.csv')
-
+X, y = load_data(path)
 # Preprocess the data
 X = preprocess_data(X)
-
 # Split the data into train and test sets
 X_train, X_test, y_train, y_test = split_data(X, y)
-
 # Train the model
 model = RandomForestModel()
 model.train(X_train, y_train)
-
-
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
@@ -33,6 +28,3 @@ def predict():
         return jsonify({'error': str(e)})
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-

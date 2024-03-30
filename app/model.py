@@ -1,7 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 
+
 class RandomForestModel:
+
     def __init__(self, model_path=None):
         if model_path:
             self.model = pickle.load(open(model_path, 'rb'))

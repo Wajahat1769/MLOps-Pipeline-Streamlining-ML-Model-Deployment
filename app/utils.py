@@ -10,7 +10,7 @@ def load_data(data_path):
     data = pd.read_csv(data_path)
     X = data.iloc[:, 2:].values.astype(np.float32)
     y = data.iloc[:, 1].map({'M': 1, 'B': 0}).values
-
+    return (X, y)
 
 def preprocess_data(X):
     """

@@ -38,14 +38,4 @@ To get started with this project, follow these steps:
 4. Develop your machine learning model and application in the `dev` branch.
 5. Follow the established branching strategy and collaboration workflow to contribute to the project.
 
-## Contributing
 
-Contributions to this project are welcome. Please follow the established coding standards and branching strategy. When contributing, create a new branch from `dev`, make your changes, and submit a pull request for review.
-
-## Documentation
-
-For detailed documentation on the CI/CD pipeline, branching strategy, collaboration workflow, and other relevant information, please refer to the [CICD.md](CICD.md) file in this repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
